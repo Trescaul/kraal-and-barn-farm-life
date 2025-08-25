@@ -25,8 +25,8 @@ const Contact = () => {
       icon: <Mail className="h-6 w-6 text-farm-green-light" />,
       title: "Email",
       subtitle: "Send us a message",
-      value: "info@kraalandbarn.com",
-      action: "mailto:info@kraalandbarn.com"
+      value: "barn.kraal@gmail.com",
+      action: "mailto:barn.kraal@gmail.com"
     },
     {
       icon: <MapPin className="h-6 w-6 text-soil-brown" />,
@@ -241,7 +241,7 @@ const Contact = () => {
                     className="w-full justify-start rounded-full hover:bg-muted"
                     asChild
                   >
-                    <a href="mailto:info@kraalandbarn.com">
+                    <a href="mailto:barn.kraal@gmail.com">
                       <Mail className="mr-3 h-5 w-5" />
                       Send Email
                     </a>

@@ -1,3 +1,4 @@
+import goatVarieties from "@/assets/goat-varieties.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,28 +8,58 @@ import Navigation from "@/components/Navigation";
 const Goats = () => {
   const goatProducts = [
     {
-      name: "Dairy Goats (Saanen)",
-      price: "KSH 18,000",
+      name: "Boer Goats (Meat Breed)",
+      price: "KSH 25,000",
       rating: 4.9,
-      reviews: 67,
+      reviews: 73,
       image: "https://images.unsplash.com/photo-1593950315186-76a92975b60c?w=600&h=400&fit=crop",
-      features: ["High Milk Yield", "Healthy", "Breeding Quality"]
+      features: ["Meat Production", "Fast Growing", "Hardy"],
+      description: "Premium Boer goats known for excellent meat production and fast growth rates. Hardy breed adapted to various climates with superior meat quality."
     },
     {
-      name: "Boer Goats (Meat)",
-      price: "KSH 15,000",
+      name: "Saanen Dairy Goats",
+      price: "KSH 35,000",
       rating: 4.8,
       reviews: 89,
-      image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
-      features: ["Fast Growth", "Premium Meat", "Hardy Breed"]
+      image: "https://images.unsplash.com/photo-1551993881-c7c2f56b2b08?w=600&h=400&fit=crop",
+      features: ["High Milk Yield", "Pure White", "Breeding Stock"],
+      description: "World-renowned dairy breed producing high-quality milk with excellent butterfat content. Ideal for commercial dairy operations and cheese making."
     },
     {
-      name: "Young Kids (3-6 months)",
-      price: "KSH 8,500",
+      name: "Nubian Goats",
+      price: "KSH 28,000",
       rating: 4.7,
-      reviews: 124,
-      image: "https://images.unsplash.com/photo-1618411640597-4384704d5afe?w=600&h=400&fit=crop",
-      features: ["Vaccinated", "Healthy", "Well Socialized"]
+      reviews: 92,
+      image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=400&fit=crop",
+      features: ["Dual Purpose", "Long Ears", "High Butterfat"],
+      description: "Distinctive breed with long, pendulous ears. Excellent for both milk and meat production. Known for rich milk with high butterfat content."
+    },
+    {
+      name: "Toggenburg Goats",
+      price: "KSH 32,000",
+      rating: 4.6,
+      reviews: 56,
+      image: "https://images.unsplash.com/photo-1570103025911-b0fd74e95ffc?w=600&h=400&fit=crop",
+      features: ["Cold Hardy", "Good Milkers", "Swiss Origin"],
+      description: "Swiss dairy breed known for consistent milk production and cold weather tolerance. Brown with distinctive white markings on face and legs."
+    },
+    {
+      name: "Kiko Goats",
+      price: "KSH 22,000",
+      rating: 4.8,
+      reviews: 67,
+      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&h=400&fit=crop",
+      features: ["Parasite Resistant", "Low Maintenance", "Meat Breed"],
+      description: "New Zealand breed known for excellent parasite resistance and low maintenance requirements. Ideal for extensive grazing systems."
+    },
+    {
+      name: "Goat Feed & Supplies",
+      price: "KSH 1,500",
+      rating: 4.5,
+      reviews: 134,
+      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&h=400&fit=crop",
+      features: ["Complete Nutrition", "Mineral Rich", "50kg Bag"],
+      description: "Specially formulated goat feed with essential vitamins and minerals. Includes concentrates, hay, and mineral supplements for optimal health."
     }
   ];
 
@@ -88,8 +119,8 @@ const Goats = () => {
             <div className="relative animate-scale-in">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1593950315186-76a92975b60c?w=700&h=500&fit=crop"
-                  alt="Premium goats"
+                  src={goatVarieties}
+                  alt="Quality goat breeds"
                   className="w-full rounded-2xl shadow-farm"
                 />
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-honey-gold rounded-full flex items-center justify-center shadow-honey animate-float">
@@ -166,6 +197,10 @@ const Goats = () => {
                     {product.name}
                   </h3>
                   
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {product.description}
+                  </p>
+                  
                   <div className="flex items-center space-x-2 mb-4">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
@@ -186,7 +221,7 @@ const Goats = () => {
                     </span>
                     <Button variant="farm" size="sm" className="rounded-full">
                       <ShoppingCart className="h-4 w-4 mr-2" />
-                      Add to Cart
+                      Inquire Now
                     </Button>
                   </div>
                 </CardContent>
