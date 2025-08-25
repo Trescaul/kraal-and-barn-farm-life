@@ -2,39 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* KRAAL & BARN Design System - Farm-inspired luxury palette */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Farm-inspired color palette */
+    --background: 43 22% 95%;          /* Cream white like fresh milk */
+    --foreground: 25 25% 15%;          /* Rich soil brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 43 22% 98%;                /* Lighter cream for cards */
+    --card-foreground: 25 25% 15%;     /* Rich soil brown */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 43 22% 98%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 140 45% 25%;            /* Deep forest green */
+    --primary-foreground: 43 22% 98%;  /* Cream text on green */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 85% 70%;           /* Warm honey gold */
+    --secondary-foreground: 25 25% 15%; /* Soil brown on gold */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 43 15% 88%;               /* Soft beige */
+    --muted-foreground: 25 15% 45%;    /* Medium brown */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 140 35% 35%;             /* Medium forest green */
+    --accent-foreground: 43 22% 98%;   /* Cream text */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 43 22% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 43 15% 85%;              /* Light beige borders */
+    --input: 43 15% 90%;               /* Input background */
+    --ring: 140 45% 25%;               /* Focus ring forest green */
+
+    /* Custom farm palette extensions */
+    --farm-green: 140 45% 25%;         /* Primary green */
+    --farm-green-light: 140 35% 35%;   /* Lighter green */
+    --farm-green-lighter: 140 25% 85%; /* Very light green */
+    
+    --honey-gold: 45 85% 70%;          /* Honey color */
+    --honey-gold-light: 45 75% 85%;    /* Light honey */
+    
+    --soil-brown: 25 25% 15%;          /* Dark soil */
+    --soil-brown-light: 25 20% 35%;    /* Medium soil */
+    
+    --cream: 43 22% 98%;               /* Pure cream */
+    --cream-warm: 43 25% 92%;          /* Warmer cream */
+    
+    /* Gradients */
+    --gradient-farm: linear-gradient(135deg, hsl(var(--farm-green)), hsl(var(--honey-gold)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--cream-warm)));
+    --gradient-nature: linear-gradient(45deg, hsl(var(--farm-green-lighter)), hsl(var(--honey-gold-light)));
+    
+    /* Shadows with farm colors */
+    --shadow-farm: 0 10px 30px -10px hsl(var(--farm-green) / 0.2);
+    --shadow-honey: 0 5px 20px -5px hsl(var(--honey-gold) / 0.3);
+    --shadow-soft: 0 2px 10px -2px hsl(var(--soil-brown) / 0.1);
+    
+    /* Animation variables */
+    --transition-farm: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.2s ease-out;
 
     --radius: 0.5rem;
 
@@ -56,33 +83,48 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode farm palette */
+    --background: 25 25% 8%;            /* Dark soil */
+    --foreground: 43 22% 95%;           /* Cream text */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 25% 10%;                 /* Slightly lighter soil */
+    --card-foreground: 43 22% 95%;      /* Cream text */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 25% 10%;
+    --popover-foreground: 43 22% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 140 45% 35%;             /* Adjusted green for dark mode */
+    --primary-foreground: 43 22% 98%;   /* Cream text */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 45 70% 60%;            /* Adjusted honey for dark mode */
+    --secondary-foreground: 25 25% 15%; /* Dark text on honey */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 20% 15%;                /* Darker muted */
+    --muted-foreground: 43 15% 70%;     /* Lighter muted text */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 140 35% 25%;              /* Darker green accent */
+    --accent-foreground: 43 22% 95%;    /* Cream text */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 43 22% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 20% 20%;               /* Dark borders */
+    --input: 25 20% 15%;                /* Dark inputs */
+    --ring: 140 45% 35%;                /* Green focus ring */
+    
+    /* Dark mode custom colors */
+    --farm-green: 140 45% 35%;
+    --farm-green-light: 140 35% 45%;
+    --farm-green-lighter: 140 25% 25%;
+    
+    --honey-gold: 45 70% 60%;
+    --honey-gold-light: 45 60% 70%;
+    
+    --soil-brown: 43 22% 95%;           /* Light text in dark mode */
+    --soil-brown-light: 43 15% 80%;     /* Medium light text */
+    
+    --cream: 25 25% 10%;                /* Dark background */
+    --cream-warm: 25 20% 12%;           /* Slightly lighter dark */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

@@ -52,6 +52,24 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// KRAAL & BARN custom colors
+				'farm-green': {
+					DEFAULT: 'hsl(var(--farm-green))',
+					light: 'hsl(var(--farm-green-light))',
+					lighter: 'hsl(var(--farm-green-lighter))',
+				},
+				'honey-gold': {
+					DEFAULT: 'hsl(var(--honey-gold))',
+					light: 'hsl(var(--honey-gold-light))',
+				},
+				'soil-brown': {
+					DEFAULT: 'hsl(var(--soil-brown))',
+					light: 'hsl(var(--soil-brown-light))',
+				},
+				cream: {
+					DEFAULT: 'hsl(var(--cream))',
+					warm: 'hsl(var(--cream-warm))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +102,57 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-right': {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0)' }
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in-right': 'slide-in-right 0.3s ease-out',
+				'scale-in': 'scale-in 0.3s ease-out',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-farm': 'var(--gradient-farm)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-nature': 'var(--gradient-nature)',
+			},
+			boxShadow: {
+				'farm': 'var(--shadow-farm)',
+				'honey': 'var(--shadow-honey)',
+				'soft': 'var(--shadow-soft)',
+			},
+			fontFamily: {
+				'serif': ['Playfair Display', 'serif'],
+				'sans': ['Inter', 'sans-serif'],
 			}
 		}
 	},

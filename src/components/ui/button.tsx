@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // KRAAL & BARN custom variants
+        farm: "bg-farm-green text-primary-foreground hover:bg-farm-green-light shadow-farm hover:shadow-honey transition-all duration-300",
+        honey: "bg-honey-gold text-soil-brown hover:bg-honey-gold-light shadow-honey transition-all duration-300",
+        earth: "bg-soil-brown text-cream hover:bg-soil-brown-light transition-all duration-300",
+        nature: "bg-gradient-nature text-soil-brown hover:scale-105 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
