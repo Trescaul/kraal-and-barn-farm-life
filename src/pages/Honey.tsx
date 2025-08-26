@@ -4,8 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Heart, ShoppingCart, Award, Droplets, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
-import honeyVarieties from "@/assets/honey-varieties.jpg";
-
 const Honey = () => {
   const honeyProducts = [
     {
@@ -14,8 +12,7 @@ const Honey = () => {
       rating: 4.9,
       reviews: 127,
       image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=400&fit=crop",
-      features: ["Raw & Unfiltered", "Organic", "500g"],
-      description: "Collected from diverse wildflowers, this honey has a complex, floral taste that changes with the seasons. Rich in antioxidants and natural enzymes."
+      features: ["Raw & Unfiltered", "Organic", "500g"]
     },
     {
       name: "Acacia Honey",
@@ -23,8 +20,7 @@ const Honey = () => {
       rating: 4.8,
       reviews: 89,
       image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=400&fit=crop",
-      features: ["Light & Mild", "Pure", "750g"],
-      description: "Light-colored with a delicate floral taste. Known for its slow crystallization and liquid consistency. Perfect for tea and desserts."
+      features: ["Light & Mild", "Pure", "750g"]
     },
     {
       name: "Manuka Honey",
@@ -32,35 +28,7 @@ const Honey = () => {
       rating: 5.0,
       reviews: 56,
       image: "https://images.unsplash.com/photo-1576839355146-c92e262e9b9c?w=600&h=400&fit=crop",
-      features: ["Medicinal Grade", "Rare", "250g"],
-      description: "Premium medicinal honey with unique antibacterial properties. Harvested from Manuka tree flowers, known for its healing benefits."
-    },
-    {
-      name: "Clover Honey",
-      price: "KSH 950",
-      rating: 4.7,
-      reviews: 143,
-      image: "https://images.unsplash.com/photo-1569288052389-dac9b01d9ba9?w=600&h=400&fit=crop",
-      features: ["Classic Taste", "Smooth", "500g"],
-      description: "The most popular honey variety with a sweet, mild flavor. Light amber color and smooth texture make it perfect for everyday use."
-    },
-    {
-      name: "Eucalyptus Honey",
-      price: "KSH 1,100",
-      rating: 4.6,
-      reviews: 78,
-      image: "https://images.unsplash.com/photo-1606814893907-c2e42943c91f?w=600&h=400&fit=crop",
-      features: ["Aromatic", "Therapeutic", "400g"],
-      description: "Dark honey with a distinctive eucalyptus aroma. Known for its respiratory benefits and rich, woody flavor profile."
-    },
-    {
-      name: "Orange Blossom Honey",
-      price: "KSH 1,300",
-      rating: 4.8,
-      reviews: 92,
-      image: "https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?w=600&h=400&fit=crop",
-      features: ["Citrus Notes", "Fragrant", "600g"],
-      description: "Light-colored honey with a fresh citrus aroma and mild orange flavor. Crystallizes finely and pairs beautifully with breakfast items."
+      features: ["Medicinal Grade", "Rare", "250g"]
     }
   ];
 
@@ -120,8 +88,8 @@ const Honey = () => {
             <div className="relative animate-scale-in">
               <div className="relative">
                 <img 
-                  src={honeyVarieties}
-                  alt="Premium honey varieties"
+                  src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=700&h=500&fit=crop"
+                  alt="Premium honey jars"
                   className="w-full rounded-2xl shadow-honey"
                 />
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-honey-gold rounded-full flex items-center justify-center shadow-farm animate-float">
@@ -197,10 +165,6 @@ const Honey = () => {
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                     {product.name}
                   </h3>
-                  
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                    {product.description}
-                  </p>
                   
                   <div className="flex items-center space-x-2 mb-4">
                     <div className="flex items-center">

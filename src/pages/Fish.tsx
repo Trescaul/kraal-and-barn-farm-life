@@ -1,4 +1,3 @@
-import fishVarieties from "@/assets/fish-varieties.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,57 +8,27 @@ const Fish = () => {
   const fishProducts = [
     {
       name: "Fresh Tilapia",
-      price: "KSH 650/kg",
-      rating: 4.8,
-      reviews: 156,
-      image: "https://images.unsplash.com/photo-1544943503-317e6db9b640?w=600&h=400&fit=crop",
-      features: ["Fresh", "Sustainable", "Local"],
-      description: "Premium tilapia raised in clean, well-maintained ponds. Known for its mild flavor and firm white flesh. Rich in protein and omega-3 fatty acids."
-    },
-    {
-      name: "African Catfish",
-      price: "KSH 750/kg",
+      price: "KSH 600/kg",
       rating: 4.9,
-      reviews: 89,
-      image: "https://images.unsplash.com/photo-1565880449808-e85de10c6e0e?w=600&h=400&fit=crop",
-      features: ["Hardy", "Fast Growing", "1.5-2kg"],
-      description: "Robust catfish variety perfect for local conditions. Excellent taste with firm flesh. Popular choice for grilling and traditional cooking methods."
+      reviews: 134,
+      image: "https://images.unsplash.com/photo-1544943503-317e6db9b640?w=600&h=400&fit=crop",
+      features: ["Fresh Daily", "Pond Raised", "Clean Water"]
     },
     {
-      name: "Rainbow Trout",
-      price: "KSH 1,200/kg",
+      name: "Premium Catfish",
+      price: "KSH 800/kg",
+      rating: 4.8,
+      reviews: 98,
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+      features: ["Large Size", "Organic Feed", "High Quality"]
+    },
+    {
+      name: "Fingerlings (Young Fish)",
+      price: "KSH 50/piece",
       rating: 4.7,
       reviews: 67,
       image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop",
-      features: ["Premium", "Cold Water", "Delicate"],
-      description: "Prized freshwater fish with delicate pink flesh and exceptional flavor. Raised in cool, clean water for optimal taste and texture."
-    },
-    {
-      name: "Carp Fish",
-      price: "KSH 550/kg",
-      rating: 4.6,
-      reviews: 134,
-      image: "https://images.unsplash.com/photo-1574781330855-d0db3cc93e63?w=600&h=400&fit=crop",
-      features: ["Affordable", "Nutritious", "Large Size"],
-      description: "Traditional farm-raised carp, excellent value for money. Rich in protein and perfect for large family meals and traditional preparations."
-    },
-    {
-      name: "Nile Perch",
-      price: "KSH 900/kg",
-      rating: 4.8,
-      reviews: 78,
-      image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=600&h=400&fit=crop",
-      features: ["White Meat", "Large Size", "Premium"],
-      description: "Large freshwater fish with firm white flesh and mild taste. Excellent for fillets and steaks. Popular in restaurants and homes alike."
-    },
-    {
-      name: "Fish Feed & Supplies",
-      price: "KSH 1,200",
-      rating: 4.5,
-      reviews: 98,
-      image: "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=600&h=400&fit=crop",
-      features: ["High Quality", "Nutritious", "20kg Bag"],
-      description: "Premium fish feed formulated for optimal growth and health. Contains all essential nutrients for healthy fish development and maximum yield."
+      features: ["Healthy", "Fast Growing", "Disease Free"]
     }
   ];
 
@@ -119,8 +88,8 @@ const Fish = () => {
             <div className="relative animate-scale-in">
               <div className="relative">
                 <img 
-                  src={fishVarieties}
-                  alt="Fresh fish varieties"
+                  src="https://images.unsplash.com/photo-1544943503-317e6db9b640?w=700&h=500&fit=crop"
+                  alt="Fresh fish"
                   className="w-full rounded-2xl shadow-farm"
                 />
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-farm-green-light rounded-full flex items-center justify-center shadow-honey animate-float">
@@ -197,10 +166,6 @@ const Fish = () => {
                     {product.name}
                   </h3>
                   
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                    {product.description}
-                  </p>
-                  
                   <div className="flex items-center space-x-2 mb-4">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
@@ -221,7 +186,7 @@ const Fish = () => {
                     </span>
                     <Button variant="farm" size="sm" className="rounded-full">
                       <ShoppingCart className="h-4 w-4 mr-2" />
-                      Order Now
+                      Add to Cart
                     </Button>
                   </div>
                 </CardContent>

@@ -4,63 +4,31 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Heart, ShoppingCart, Zap, Shield, Award } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
-import rabbitVarieties from "@/assets/rabbit-varieties.jpg";
-
 const Rabbits = () => {
   const rabbitProducts = [
     {
-      name: "New Zealand White Rabbits",
+      name: "Premium Breeding Rabbits",
       price: "KSH 3,500",
       rating: 4.9,
       reviews: 84,
       image: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600&h=400&fit=crop",
-      features: ["High Quality", "Vaccinated", "Breeding Ready"],
-      description: "Premium meat rabbits known for their fast growth and excellent feed conversion. Pure white with pink eyes, ideal for commercial production."
+      features: ["High Quality", "Vaccinated", "Breeding Ready"]
     },
     {
-      name: "Flemish Giant Rabbits",
-      price: "KSH 4,200",
+      name: "Young Rabbits (8-12 weeks)",
+      price: "KSH 2,200",
       rating: 4.8,
       reviews: 156,
       image: "https://images.unsplash.com/photo-1606591521556-ddb74fbc6300?w=600&h=400&fit=crop",
-      features: ["Large Size", "Gentle Nature", "12+ weeks"],
-      description: "The gentle giants of the rabbit world. These massive rabbits can weigh up to 10kg and are known for their calm temperament and impressive size."
-    },
-    {
-      name: "Holland Lop Rabbits",
-      price: "KSH 2,800",
-      rating: 4.7,
-      reviews: 92,
-      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&h=400&fit=crop",
-      features: ["Small & Cute", "Friendly", "8-10 weeks"],
-      description: "Adorable dwarf rabbits with distinctive lopped ears. Perfect for families and small-scale farming. Known for their friendly and docile nature."
-    },
-    {
-      name: "California Rabbits",
-      price: "KSH 3,200",
-      rating: 4.8,
-      reviews: 67,
-      image: "https://images.unsplash.com/photo-1585502848789-4d7bb2b81b0d?w=600&h=400&fit=crop",
-      features: ["Dual Purpose", "Hardy", "Breeding Age"],
-      description: "Excellent for both meat and fur production. White body with dark ears, nose, feet, and tail. Very hardy and adaptable to various climates."
-    },
-    {
-      name: "Angora Rabbits",
-      price: "KSH 5,500",
-      rating: 4.9,
-      reviews: 43,
-      image: "https://images.unsplash.com/photo-1596003906949-67221c37965c?w=600&h=400&fit=crop",
-      features: ["Luxury Fiber", "High Value", "Breeding Stock"],
-      description: "Premium fiber-producing rabbits with incredibly soft, long wool. Highly valuable for textile production and specialty fiber markets."
+      features: ["Healthy", "Well-Fed", "8-12 Weeks"]
     },
     {
       name: "Rabbit Feed & Supplies",
       price: "KSH 800",
       rating: 4.7,
-      reviews: 125,
+      reviews: 92,
       image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&h=400&fit=crop",
-      features: ["Nutritious", "Organic", "25kg Bag"],
-      description: "Premium rabbit pellets fortified with essential vitamins and minerals. Includes timothy hay, pellets, and treats for optimal rabbit health."
+      features: ["Nutritious", "Organic", "25kg Bag"]
     }
   ];
 
@@ -120,8 +88,8 @@ const Rabbits = () => {
             <div className="relative animate-scale-in">
               <div className="relative">
                 <img 
-                  src={rabbitVarieties}
-                  alt="Premium rabbit varieties"
+                  src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=700&h=500&fit=crop"
+                  alt="Premium rabbits"
                   className="w-full rounded-2xl shadow-farm"
                 />
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-farm-green rounded-full flex items-center justify-center shadow-honey animate-float">
@@ -197,10 +165,6 @@ const Rabbits = () => {
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                     {product.name}
                   </h3>
-                  
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                    {product.description}
-                  </p>
                   
                   <div className="flex items-center space-x-2 mb-4">
                     <div className="flex items-center">
