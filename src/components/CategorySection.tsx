@@ -35,6 +35,14 @@ const categories = [
     icon: "🐐",
     color: "soil-brown",
     image: "https://images.unsplash.com/photo-1593950315186-76a92975b60c?w=600&h=400&fit=crop"
+  },
+  {
+    title: "Fresh Vegetables",
+    description: "Organically grown vegetables harvested daily from our fertile soil. Crisp, nutritious, and bursting with natural flavor.",
+    path: "/vegetables",
+    icon: "🥬",
+    color: "farm-green",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop"
   }
 ];
 
@@ -54,7 +62,7 @@ const CategorySection = () => {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {categories.map((category, index) => (
             <Card 
               key={category.path}

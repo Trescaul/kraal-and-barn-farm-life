@@ -14,6 +14,7 @@ const Navigation = () => {
     { name: "Rabbits", path: "/rabbits" },
     { name: "Fish", path: "/fish" },
     { name: "Goats", path: "/goats" },
+    { name: "Vegetables", path: "/vegetables" },
     { name: "About Us", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -46,7 +47,7 @@ const Navigation = () => {
 
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center space-x-6">
-              {navigationItems.slice(0, 5).map((item) => (
+              {navigationItems.slice(0, 6).map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
