@@ -9,6 +9,7 @@ import Rabbits from "./pages/Rabbits";
 import Fish from "./pages/Fish";
 import Goats from "./pages/Goats";
 import Vegetables from "./pages/Vegetables";
+import pigs from "./pages/pigs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
