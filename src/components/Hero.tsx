@@ -26,13 +26,13 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-blue-500 mb-6 leading-tight bg-black/60 px-4 py-2 inline-block rounded-lg">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-blue mb-6 leading-tight">
             Welcome to
             <span className="block text-blue-500">KRAAL & BARN</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-blue-400 max-w-2xl mx-auto mb-12 leading-relaxed bg-black/60 px-4 py-3 rounded-lg">
+          <p className="text-lg md:text-xl text-blue/90 max-w-2xl mx-auto mb-12 leading-relaxed">
             Discover the finest farm products from our sustainable farm. 
             From golden honey to fresh rabbits, fish, and goats - 
             experience authentic farm life like never before.
@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg"
-              className="bg-farm-green hover:bg-farm-green-light text-primary-foreground px-8 py-4 rounded-full shadow-farm hover:shadow-honey transition-all duration-300 group"
+              className="bg-farm-green hover:bg-farm-blue-light text-primary-foreground px-8 py-4 rounded-full shadow-farm hover:shadow-honey transition-all duration-300 group"
               asChild
             >
               <Link to="/honey">
