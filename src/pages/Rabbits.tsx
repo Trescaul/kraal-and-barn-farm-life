@@ -15,11 +15,11 @@ const Rabbits = () => {
       features: ["High Quality", "Vaccinated", "Breeding Ready"]
     },
     {
-      name: "Young Rabbits (8-12 weeks)",
+      name: "Francis Rabbits (8-12 weeks)",
       price: "KSH 2,200",
-      rating: 4.8,
-      reviews: 156,
-      image: "https://images.unsplash.com/photo-1606591521556-ddb74fbc6300?w=600&h=400&fit=crop",
+      rating: Not yet,
+      reviews: None,
+      image: "honey 1.jpeg",
       features: ["Healthy", "Well-Fed", "8-12 Weeks"]
     },
     {
