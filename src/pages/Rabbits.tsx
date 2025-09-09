@@ -11,7 +11,7 @@ const Rabbits = () => {
       price: "KSH 3,500",
       rating: 4.9,
       reviews: 84,
-      image: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600&h=400&fit=crop",
+      image: "public/lovable-uploads/rabbit.jpeg",
       features: ["High Quality", "Vaccinated", "Breeding Ready"]
     },
     {
