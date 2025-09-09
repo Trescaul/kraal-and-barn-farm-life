@@ -10,7 +10,7 @@ const categories = [
     path: "/honey",
     icon: "🍯",
     color: "honey-gold",
-    image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=400&fit=crop"
+    image: "honey 1.jpeg"
   },
   {
     title: "Fresh Rabbits",
