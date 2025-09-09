@@ -8,7 +8,6 @@ const Honey = () => {
   const honeyProducts = [
     {
       name: "Premium Wildflower Honey",
-      price: "KSH 1,200",
       rating: 4.9,
       reviews: 127,
       image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=400&fit=crop",
@@ -16,7 +15,6 @@ const Honey = () => {
     },
     {
       name: "Acacia Honey",
-      price: "KSH 1,500",
       rating: 4.8,
       reviews: 89,
       image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=400&fit=crop",
@@ -24,7 +22,6 @@ const Honey = () => {
     },
     {
       name: "Manuka Honey",
-      price: "KSH 2,800",
       rating: 5.0,
       reviews: 56,
       image: "https://images.unsplash.com/photo-1576839355146-c92e262e9b9c?w=600&h=400&fit=crop",
@@ -180,10 +177,7 @@ const Honey = () => {
                     </span>
                   </div>
                   
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-farm-green">
-                      {product.price}
-                    </span>
+                  <div className="flex justify-center">
                     <Button variant="farm" size="sm" className="rounded-full">
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Add to Cart
