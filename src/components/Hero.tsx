@@ -22,19 +22,19 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 mb-8">
             <Sparkles className="h-4 w-4 text-white mr-2" />
-            <span className="text-sm font-medium text-blue">Premium Farm Life Experience</span>
+            <span className="text-sm font-medium text-blue-500">Premium Farm Life Experience</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-blue mb-6 leading-tight">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-blue-500 mb-6 leading-tight bg-black/70 px-4 py-2 rounded-lg inline-block">
             Welcome to
-            <span className="block text-blue">KRAAL & BARN</span>
+            <span className="block text-blue-500">KRAAL & BARN</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-blue max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-400 max-w-2xl mx-auto mb-12 leading-relaxed bg-black/70 px-4 py-3 rounded-lg">
             Discover the finest farm products from our sustainable farm. 
-            From golden honey to fresh rabbits, fish, and goats - 
+            From golden honey to fresh rabbits, fish, and goats – 
             experience authentic farm life like never before.
           </p>
 
@@ -54,7 +54,7 @@ const Hero = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="border-2 border-blue/70 text-blue hover:bg-blue hover:text-soil-brown px-8 py-4 rounded-full backdrop-blur-sm bg-white/10 transition-all duration-300"
+              className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-soil-brown px-8 py-4 rounded-full backdrop-blur-sm bg-white/10 transition-all duration-300"
               asChild
             >
               <Link to="/about">
@@ -78,8 +78,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-blue/70 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-blue/70 rounded-full mt-2 animate-pulse" />
+        <div className="w-6 h-10 border-2 border-blue-500 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-blue-500 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>
