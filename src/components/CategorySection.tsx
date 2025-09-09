@@ -29,6 +29,14 @@ const categories = [
     image: "https://images.unsplash.com/photo-1544943503-317e6db9b640?w=600&h=400&fit=crop"
   },
   {
+    title: "Quality pigs",
+    description: "Premium pigs raised in natural pastures. Ideal for meat production and sustainable farming.",
+    path: "/meat",
+    icon: "🐐",
+    color: "soil-brown",
+    image: "honey 1.jpeg"
+  },
+  {
     title: "Quality Goats",
     description: "Premium goats raised in natural pastures. Ideal for milk production and sustainable farming.",
     path: "/goats",
