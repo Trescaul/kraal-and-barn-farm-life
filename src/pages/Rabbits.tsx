@@ -19,7 +19,7 @@ const Rabbits = () => {
       price: "KSH 2,200",
       rating: Not yet,
       reviews: None,
-      image: "https://th.bing.com/th/id/R.e9b8d95f04f778907e19a7763c8dc5c5?rik=JdC7OyGyh3Yi6Q&pid=ImgRaw&r=0",
+      image: "public/lovable-uploads/rabbit.jpeg",
       features: ["Healthy", "Well-Fed", "8-12 Weeks"]
     },
     {
