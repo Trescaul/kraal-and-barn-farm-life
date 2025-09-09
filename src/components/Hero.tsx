@@ -26,23 +26,23 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-blue mb-6 leading-tight">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-blue-500 mb-6 leading-tight bg-black/60 px-6 py-3 inline-block rounded-lg mx-auto">
             Welcome to
             <span className="block text-blue-500">KRAAL & BARN</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-blue/90 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-400 max-w-2xl mx-auto mt-4 mb-20 leading-relaxed bg-black/60 px-6 py-4 rounded-lg">
             Discover the finest farm products from our sustainable farm. 
             From golden honey to fresh rabbits, fish, and goats - 
             experience authentic farm life like never before.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-24">
             <Button 
               size="lg"
-              className="bg-farm-green hover:bg-farm-blue-light text-primary-foreground px-8 py-4 rounded-full shadow-farm hover:shadow-honey transition-all duration-300 group"
+              className="bg-farm-green hover:bg-farm-green-light text-white px-8 py-4 rounded-full shadow-farm hover:shadow-honey transition-all duration-300 group"
               asChild
             >
               <Link to="/honey">
@@ -52,9 +52,8 @@ const Hero = () => {
             </Button>
             
             <Button 
-              variant="outline"
               size="lg"
-              className="border-2 border-blue/70 text-blue hover:bg-blue hover:text-soil-brown px-8 py-4 rounded-full backdrop-blur-sm bg-white/10 transition-all duration-300"
+              className="bg-farm-green hover:bg-farm-green-light text-white px-8 py-4 rounded-full shadow-farm hover:shadow-honey transition-all duration-300"
               asChild
             >
               <Link to="/about">
@@ -62,24 +61,6 @@ const Hero = () => {
               </Link>
             </Button>
           </div>
-        </div>
-
-        {/* Floating Animation Elements */}
-        <div className="absolute top-20 left-10 animate-float opacity-60">
-          <div className="w-4 h-4 bg-honey-gold rounded-full" />
-        </div>
-        <div className="absolute top-40 right-20 animate-float opacity-40" style={{ animationDelay: '1s' }}>
-          <div className="w-6 h-6 bg-farm-green-light rounded-full" />
-        </div>
-        <div className="absolute bottom-40 left-20 animate-float opacity-50" style={{ animationDelay: '2s' }}>
-          <div className="w-3 h-3 bg-honey-gold-light rounded-full" />
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-blue/70 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-blue/70 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>
